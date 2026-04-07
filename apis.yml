@@ -14,8 +14,7 @@ properties:
   - type: OpenAPI
     url: openapi/amazon-secrets-manager-openapi.yml
   - type: OpenAPI
-    url: 
-      https://api.apis.guru/v2/specs/amazonaws.com/secretsmanager/2017-10-17/openapi.yaml
+    url: https://api.apis.guru/v2/specs/amazonaws.com/secretsmanager/2017-10-17/openapi.yaml
   - type: JSONSchema
     url: json-schema/amazon-secrets-manager-secret-schema.json
   - type: JSONLD
@@ -33,8 +32,7 @@ properties:
   - type: CLI Reference
     url: https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/
   - type: Security
-    url: 
-      https://docs.aws.amazon.com/secretsmanager/latest/userguide/security.html
+    url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/security.html
 
 common:
   - type: Portal
@@ -79,9 +77,9 @@ maintainer:
   url: https://github.com/kinlane
 
 tags:
-  - Secrets
-  - Security
+  - AWS
+  - Configuration
   - Credentials
   - Rotation
-  - Configuration
-  - AWS
+  - Secrets
+  - Security
