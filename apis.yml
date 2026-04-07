@@ -1,14 +1,10 @@
 name: Amazon Secrets Manager
 description: >-
-  Amazon Secrets Manager helps you manage, retrieve, and rotate database
-  credentials, API keys, and other secrets throughout their lifecycle. It
-  provides centralized secrets management with built-in integration for Amazon
-  RDS, Amazon Redshift, and Amazon DocumentDB, enabling automatic rotation of
-  secrets without requiring application changes. Secrets Manager encrypts
-  secrets at rest using AWS KMS encryption keys and provides fine-grained access
-  control through IAM policies, helping organizations meet security and
-  compliance requirements while eliminating the need to hard-code sensitive
-  information in application source code.
+  Amazon Secrets Manager helps you manage, retrieve, and rotate database credentials,
+  API keys, and other secrets throughout their lifecycle. It provides centralized
+  secrets management with built-in integration for Amazon RDS, Amazon Redshift, and
+  Amazon DocumentDB, enabling automatic rotation of secrets without requiring application
+  changes.
 url: https://aws.amazon.com/secrets-manager/
 baseURL: https://secretsmanager.amazonaws.com
 
@@ -18,7 +14,8 @@ properties:
   - type: OpenAPI
     url: openapi/amazon-secrets-manager-openapi.yml
   - type: OpenAPI
-    url: https://api.apis.guru/v2/specs/amazonaws.com/secretsmanager/2017-10-17/openapi.yaml
+    url: 
+      https://api.apis.guru/v2/specs/amazonaws.com/secretsmanager/2017-10-17/openapi.yaml
   - type: JSONSchema
     url: json-schema/amazon-secrets-manager-secret-schema.json
   - type: JSONLD
@@ -36,7 +33,8 @@ properties:
   - type: CLI Reference
     url: https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/
   - type: Security
-    url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/security.html
+    url: 
+      https://docs.aws.amazon.com/secretsmanager/latest/userguide/security.html
 
 common:
   - type: Portal
