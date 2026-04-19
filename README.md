@@ -1,7 +1,7 @@
-# Amazon Secrets Manager (amazon-secrets-manager)
+# Amazon Secrets Manager
 Amazon Secrets Manager helps you manage, retrieve, and rotate database credentials, API keys, and other secrets throughout their lifecycle. It provides centralized secrets management with built-in integration for Amazon RDS, Amazon Redshift, and Amazon DocumentDB, enabling automatic rotation of secrets without requiring application changes.
 
-**URL:** [Visit Amazon Secrets Manager](https://aws.amazon.com/secrets-manager/)
+**URL:** [Visit APIs.json URL](https://aws.amazon.com/secrets-manager/)
 
 **Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
 
@@ -29,9 +29,9 @@ The Amazon Secrets Manager API for creating, managing, retrieving, and rotating 
 
 - [Documentation](https://docs.aws.amazon.com/secretsmanager/latest/apireference/)
 - [OpenAPI](openapi/amazon-secrets-manager-openapi.yml)
-- [JSONSchema - Secret](json-schema/amazon-secrets-manager-secret-schema.json)
-- [JSONSchema - SecretValue](json-schema/amazon-secrets-manager-secret-value-schema.json)
-- [JSONSchema - RotationRules](json-schema/amazon-secrets-manager-rotation-rules-schema.json)
+- [JSONSchema](json-schema/amazon-secrets-manager-secret-schema.json)
+- [JSONSchema](json-schema/amazon-secrets-manager-secret-value-schema.json)
+- [JSONSchema](json-schema/amazon-secrets-manager-rotation-rules-schema.json)
 
 ## Common Properties
 
@@ -55,6 +55,26 @@ The Amazon Secrets Manager API for creating, managing, retrieving, and rotating 
 - [StackOverflow](https://stackoverflow.com/questions/tagged/aws-secrets-manager)
 - [KnowledgeCenter](https://repost.aws/knowledge-center)
 - [CLI](https://docs.aws.amazon.com/cli/latest/reference/secretsmanager/)
+- [SpectralRules](rules/amazon-secrets-manager-spectral-rules.yml)
+- [Vocabulary](vocabulary/amazon-secrets-manager-vocabulary.yaml)
+- [NaftikoCapability](capabilities/secrets-management.yaml)
+- [JSON-LD](json-ld/amazon-secrets-manager-context.jsonld)
+- [JSONSchema](json-schema/amazon-secrets-manager-get-random-password-response-schema.json)
+- [JSONSchema](json-schema/amazon-secrets-manager-list-secrets-response-schema.json)
+- [JSONSchema](json-schema/amazon-secrets-manager-tag-schema.json)
+- [JSONStructure](json-structure/amazon-secrets-manager-get-random-password-response-structure.json)
+- [JSONStructure](json-structure/amazon-secrets-manager-list-secrets-response-structure.json)
+- [JSONStructure](json-structure/amazon-secrets-manager-rotation-rules-structure.json)
+- [JSONStructure](json-structure/amazon-secrets-manager-secret-structure.json)
+- [JSONStructure](json-structure/amazon-secrets-manager-secret-value-structure.json)
+- [JSONStructure](json-structure/amazon-secrets-manager-tag-structure.json)
+- [Example](examples/amazon-secrets-manager-get-random-password-response-example.json)
+- [Example](examples/amazon-secrets-manager-list-secrets-response-example.json)
+- [Example](examples/amazon-secrets-manager-rotation-rules-example.json)
+- [Example](examples/amazon-secrets-manager-secret-example.json)
+- [Example](examples/amazon-secrets-manager-secret-value-example.json)
+- [Example](examples/amazon-secrets-manager-tag-example.json)
+- [NaftikoCapability](capabilities/shared/amazon-secrets-manager.yaml)
 
 ## Features
 
@@ -100,30 +120,38 @@ Machine-readable API specifications organized by format.
 
 ### OpenAPI
 
-- [Amazon Secrets Manager API](openapi/amazon-secrets-manager-openapi.yml)
+- [amazon-secrets-manager-openapi.yml](openapi/amazon-secrets-manager-openapi.yml)
 
 ### JSON Schema
 
-- [Secret](json-schema/amazon-secrets-manager-secret-schema.json)
-- [SecretValue](json-schema/amazon-secrets-manager-secret-value-schema.json)
-- [RotationRules](json-schema/amazon-secrets-manager-rotation-rules-schema.json)
-- [Tag](json-schema/amazon-secrets-manager-tag-schema.json)
+- [amazon-secrets-manager-get-random-password-response-schema.json](json-schema/amazon-secrets-manager-get-random-password-response-schema.json)
+- [amazon-secrets-manager-list-secrets-response-schema.json](json-schema/amazon-secrets-manager-list-secrets-response-schema.json)
+- [amazon-secrets-manager-rotation-rules-schema.json](json-schema/amazon-secrets-manager-rotation-rules-schema.json)
+- [amazon-secrets-manager-secret-schema.json](json-schema/amazon-secrets-manager-secret-schema.json)
+- [amazon-secrets-manager-secret-value-schema.json](json-schema/amazon-secrets-manager-secret-value-schema.json)
+- [amazon-secrets-manager-tag-schema.json](json-schema/amazon-secrets-manager-tag-schema.json)
 
 ### JSON Structure
 
-- [Secret](json-structure/amazon-secrets-manager-secret-structure.json)
-- [SecretValue](json-structure/amazon-secrets-manager-secret-value-structure.json)
-- [RotationRules](json-structure/amazon-secrets-manager-rotation-rules-structure.json)
+- [amazon-secrets-manager-get-random-password-response-structure.json](json-structure/amazon-secrets-manager-get-random-password-response-structure.json)
+- [amazon-secrets-manager-list-secrets-response-structure.json](json-structure/amazon-secrets-manager-list-secrets-response-structure.json)
+- [amazon-secrets-manager-rotation-rules-structure.json](json-structure/amazon-secrets-manager-rotation-rules-structure.json)
+- [amazon-secrets-manager-secret-structure.json](json-structure/amazon-secrets-manager-secret-structure.json)
+- [amazon-secrets-manager-secret-value-structure.json](json-structure/amazon-secrets-manager-secret-value-structure.json)
+- [amazon-secrets-manager-tag-structure.json](json-structure/amazon-secrets-manager-tag-structure.json)
 
 ### JSON-LD
 
-- [Amazon Secrets Manager Context](json-ld/amazon-secrets-manager-context.jsonld)
+- [amazon-secrets-manager-context.jsonld](json-ld/amazon-secrets-manager-context.jsonld)
 
 ### Examples
 
-- [Secret Example](examples/amazon-secrets-manager-secret-example.json)
-- [SecretValue Example](examples/amazon-secrets-manager-secret-value-example.json)
-- [RotationRules Example](examples/amazon-secrets-manager-rotation-rules-example.json)
+- [amazon-secrets-manager-get-random-password-response-example.json](examples/amazon-secrets-manager-get-random-password-response-example.json)
+- [amazon-secrets-manager-list-secrets-response-example.json](examples/amazon-secrets-manager-list-secrets-response-example.json)
+- [amazon-secrets-manager-rotation-rules-example.json](examples/amazon-secrets-manager-rotation-rules-example.json)
+- [amazon-secrets-manager-secret-example.json](examples/amazon-secrets-manager-secret-example.json)
+- [amazon-secrets-manager-secret-value-example.json](examples/amazon-secrets-manager-secret-value-example.json)
+- [amazon-secrets-manager-tag-example.json](examples/amazon-secrets-manager-tag-example.json)
 
 ## Capabilities
 
@@ -131,22 +159,17 @@ Naftiko capabilities organized as shared per-API definitions composed into custo
 
 ### Shared Per-API Definitions
 
-- [Amazon Secrets Manager API](capabilities/shared/amazon-secrets-manager.yaml) — 10 operations for secret management, rotation, and retrieval
+- [amazon-secrets-manager.yaml](capabilities/shared/amazon-secrets-manager.yaml)
 
 ### Workflow Capabilities
 
-| Workflow | APIs Combined | Tools | Persona |
-|----------|--------------|-------|---------|
-| [Secrets Management](capabilities/secrets-management.yaml) | Amazon Secrets Manager | 9 | DevOps Engineer, Application Developer |
+- [secrets-management.yaml](capabilities/secrets-management.yaml)
 
 ## Vocabulary
 
-- [Amazon Secrets Manager Vocabulary](vocabulary/amazon-secrets-manager-vocabulary.yaml) — Unified taxonomy mapping 4 resources, 10 actions, 1 workflow, and 2 personas across operational (OpenAPI) and capability (Naftiko) dimensions
+- [amazon-secrets-manager-vocabulary.yaml](vocabulary/amazon-secrets-manager-vocabulary.yaml)
 
 ## Rules
 
-- [Amazon Secrets Manager Spectral Rules](rules/amazon-secrets-manager-spectral-rules.yml) — 20 rules across 9 categories enforcing Amazon Secrets Manager API conventions
+- [amazon-secrets-manager-spectral-rules.yml](rules/amazon-secrets-manager-spectral-rules.yml)
 
-## Maintainers
-
-**FN:** Kin Lane
