@@ -45,6 +45,33 @@ apis:
   - type: NaftikoCapability
     url: capabilities/amazon-secrets-manager-secrets.yaml
 common:
+- type: ArazzoWorkflows
+  url: arazzo/
+  workflows:
+  - url: arazzo/amazon-secrets-manager-create-and-read-secret-workflow.yml
+    name: Amazon Secrets Manager Create and Read Secret
+    summary: Create a new secret, then immediately retrieve its decrypted value to confirm it was stored.
+  - url: arazzo/amazon-secrets-manager-find-and-delete-secret-workflow.yml
+    name: Amazon Secrets Manager Find and Delete Secret
+    summary: List secrets filtered by name, branch on whether a match exists, then describe and schedule deletion of the matched secret.
+  - url: arazzo/amazon-secrets-manager-generate-password-and-store-secret-workflow.yml
+    name: Amazon Secrets Manager Generate Password and Store Secret
+    summary: Generate a random password, store it as a new secret, then read the secret value back to confirm it was saved.
+  - url: arazzo/amazon-secrets-manager-restore-deleted-secret-workflow.yml
+    name: Amazon Secrets Manager Restore Deleted Secret
+    summary: Cancel the scheduled deletion of a secret with RestoreSecret, then describe it to confirm the DeletedDate was cleared.
+  - url: arazzo/amazon-secrets-manager-rotate-and-describe-workflow.yml
+    name: Amazon Secrets Manager Rotate and Describe
+    summary: Start rotation on a secret with a Lambda rotation function, then describe it to confirm rotation is configured.
+  - url: arazzo/amazon-secrets-manager-rotate-version-and-verify-workflow.yml
+    name: Amazon Secrets Manager Put New Version and Verify
+    summary: Store a new encrypted version of a secret with PutSecretValue, then read the current value to confirm the update.
+  - url: arazzo/amazon-secrets-manager-tag-secret-and-verify-workflow.yml
+    name: Amazon Secrets Manager Tag Secret and Verify
+    summary: Attach tags to a secret with TagResource, then describe the secret to confirm the tags are present in its metadata.
+  - url: arazzo/amazon-secrets-manager-update-metadata-and-verify-workflow.yml
+    name: Amazon Secrets Manager Update Metadata and Verify
+    summary: Update a secret's description and KMS key with UpdateSecret, then describe it to confirm the new metadata was applied.
 - type: Portal
   url: https://aws.amazon.com/
 - type: GettingStarted
