@@ -39,6 +39,12 @@ apis:
       - type: JSONSchema
         url: json-schema/amazon-secrets-manager-rotation-rules-schema.json
 common:
+  - type: TrustCenter
+    url: security/amazon-secrets-manager-trust-center.yml
+  - type: VulnerabilityDisclosure
+    url: security/amazon-secrets-manager-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/amazon-secrets-manager-domain-security.yml
   - type: PostmanWorkspace
     url: https://www.postman.com/kinlaneapi/amazon-secrets-manager/overview
   - type: Arazzo
