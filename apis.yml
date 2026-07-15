@@ -39,6 +39,8 @@ apis:
       - type: JSONSchema
         url: json-schema/amazon-secrets-manager-rotation-rules-schema.json
 common:
+  - type: AgenticAccess
+    url: agentic-access/amazon-secrets-manager-agentic-access.yml
   - type: TrustCenter
     url: security/amazon-secrets-manager-trust-center.yml
   - type: VulnerabilityDisclosure
