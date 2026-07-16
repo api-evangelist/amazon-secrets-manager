@@ -7,7 +7,7 @@ url: https://aws.amazon.com/secrets-manager/
 baseURL: https://secretsmanager.amazonaws.com
 kind: company
 created: '2024-01-01'
-modified: '2026-05-19'
+modified: '2026-06-20'
 tags:
   - AWS
   - Configuration
@@ -47,6 +47,32 @@ common:
     url: security/amazon-secrets-manager-vulnerability-disclosure.yml
   - type: DomainSecurity
     url: security/amazon-secrets-manager-domain-security.yml
+  - type: Authentication
+    url: authentication/amazon-secrets-manager-authentication.yml
+  - type: Packages
+    url: packages/amazon-secrets-manager-packages.yml
+  - type: WellKnown
+    url: well-known/amazon-secrets-manager-well-known.yml
+  - type: SecurityTxt
+    url: well-known/amazon-secrets-manager-security.txt
+  - type: MCPServer
+    url: mcp/amazon-secrets-manager-mcp.yml
+  - type: LLMsTxt
+    url: llms/amazon-secrets-manager-llms.txt
+  - type: Overlay
+    url: overlays/amazon-secrets-manager-openapi-overlay.yaml
+  - type: Conformance
+    url: conformance/amazon-secrets-manager-conformance.yml
+  - type: ErrorCatalog
+    url: errors/amazon-secrets-manager-problem-types.yml
+  - type: Lifecycle
+    url: lifecycle/amazon-secrets-manager-lifecycle.yml
+  - type: Conventions
+    url: conventions/amazon-secrets-manager-conventions.yml
+  - type: CLI
+    url: cli/amazon-secrets-manager-cli.yml
+  - type: DataModel
+    url: data-model/amazon-secrets-manager-data-model.yml
   - type: PostmanWorkspace
     url: https://www.postman.com/kinlaneapi/amazon-secrets-manager/overview
   - type: Arazzo
