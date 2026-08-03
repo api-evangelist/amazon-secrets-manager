@@ -1,0 +1,22 @@
+{
+  "provider": "amazon-secrets-manager",
+  "sources": [
+    "amazon-secrets-manager-passwords-api-openapi.yml",
+    "amazon-secrets-manager-rotation-api-openapi.yml",
+    "amazon-secrets-manager-secrets-api-openapi.yml",
+    "amazon-secrets-manager-tagresource-api-openapi.yml",
+    "amazon-secrets-manager-untagresource-api-openapi.yml"
+  ],
+  "outputs": [
+    "amazon-secrets-manager-passwords-api-openapi.yml",
+    "amazon-secrets-manager-rotation-api-openapi.yml",
+    "amazon-secrets-manager-secrets-api-openapi.yml",
+    "amazon-secrets-manager-tagresource-api-openapi.yml",
+    "amazon-secrets-manager-untagresource-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
