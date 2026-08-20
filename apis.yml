@@ -91,6 +91,8 @@ apis:
   humanURL: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
   baseURL: https://secretsmanager.{region}.amazonaws.com
   tags:
+  - TagResource
+  tags_raw:
   - '#TagResource'
   properties:
   - type: OpenAPI
@@ -109,6 +111,8 @@ apis:
   humanURL: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
   baseURL: https://secretsmanager.{region}.amazonaws.com
   tags:
+  - UntagResource
+  tags_raw:
   - '#UntagResource'
   properties:
   - type: OpenAPI
