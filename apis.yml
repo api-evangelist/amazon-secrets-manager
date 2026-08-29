@@ -138,6 +138,9 @@ apis:
   - type: JSONSchema
     url: json-schema/amazon-secrets-manager-rotation-rules-schema.json
 common:
+  - type: CapabilityMap
+    url: capabilities/amazon-secrets-manager-capability-edges.yml
+    name: Amazon Secrets Manager Business Capability Map
   - type: AgenticAccess
     url: agentic-access/amazon-secrets-manager-agentic-access.yml
   - type: TrustCenter
