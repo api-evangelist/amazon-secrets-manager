@@ -103,7 +103,7 @@ apis:
   humanURL: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
   baseURL: https://secretsmanager.{region}.amazonaws.com
   tags:
-  - '#TagResource'
+  - TagResource
   tags_raw:
   - '#TagResource'
   properties:
@@ -123,7 +123,7 @@ apis:
   humanURL: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
   baseURL: https://secretsmanager.{region}.amazonaws.com
   tags:
-  - '#UntagResource'
+  - UntagResource
   tags_raw:
   - '#UntagResource'
   properties:
