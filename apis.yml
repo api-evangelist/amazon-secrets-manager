@@ -97,18 +97,16 @@ apis:
     url: json-schema/amazon-secrets-manager-secret-value-schema.json
   - type: JSONSchema
     url: json-schema/amazon-secrets-manager-rotation-rules-schema.json
-- aid: amazon-secrets-manager:amazon-secrets-manager-tagresource-api
-  name: 'Amazon Secrets Manager #TagResource API'
-  description: 'The #TagResource API from Amazon Secrets Manager — 1 operation(s) for #tagresource.'
+- aid: amazon-secrets-manager:amazon-secrets-manager-tag-resource-api
+  name: Amazon Secrets Manager Tag Resource API
+  description: The Tag Resource API from Amazon Secrets Manager — 1 operation(s) for tag resource.
   humanURL: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
   baseURL: https://secretsmanager.{region}.amazonaws.com
   tags:
-  - TagResource
-  tags_raw:
-  - '#TagResource'
+  - Tag Resource
   properties:
   - type: OpenAPI
-    url: openapi/amazon-secrets-manager-tagresource-api-openapi.yml
+    url: openapi/amazon-secrets-manager-tag-resource-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
   - type: JSONSchema
@@ -117,18 +115,16 @@ apis:
     url: json-schema/amazon-secrets-manager-secret-value-schema.json
   - type: JSONSchema
     url: json-schema/amazon-secrets-manager-rotation-rules-schema.json
-- aid: amazon-secrets-manager:amazon-secrets-manager-untagresource-api
-  name: 'Amazon Secrets Manager #UntagResource API'
-  description: 'The #UntagResource API from Amazon Secrets Manager — 1 operation(s) for #untagresource.'
+- aid: amazon-secrets-manager:amazon-secrets-manager-untag-resource-api
+  name: Amazon Secrets Manager Untag Resource API
+  description: The Untag Resource API from Amazon Secrets Manager — 1 operation(s) for untag resource.
   humanURL: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
   baseURL: https://secretsmanager.{region}.amazonaws.com
   tags:
-  - UntagResource
-  tags_raw:
-  - '#UntagResource'
+  - Untag Resource
   properties:
   - type: OpenAPI
-    url: openapi/amazon-secrets-manager-untagresource-api-openapi.yml
+    url: openapi/amazon-secrets-manager-untag-resource-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
   - type: JSONSchema
