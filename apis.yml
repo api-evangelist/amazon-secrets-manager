@@ -134,6 +134,8 @@ apis:
   - type: JSONSchema
     url: json-schema/amazon-secrets-manager-rotation-rules-schema.json
 common:
+- type: Plans
+  url: plans/amazon-secrets-manager-plans-pricing.yml
 - type: Website
   url: https://amazon.com
 - type: CapabilityMap
