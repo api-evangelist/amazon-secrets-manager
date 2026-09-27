@@ -97,34 +97,18 @@ apis:
     url: json-schema/amazon-secrets-manager-secret-value-schema.json
   - type: JSONSchema
     url: json-schema/amazon-secrets-manager-rotation-rules-schema.json
-- aid: amazon-secrets-manager:amazon-secrets-manager-tag-resource-api
-  name: Amazon Secrets Manager Tag Resource API
-  description: The Tag Resource API from Amazon Secrets Manager — 1 operation(s) for tag resource.
+- aid: amazon-secrets-manager:amazon-secrets-manager-amazon-secrets-manager-api-api
+  name: Amazon Secrets Manager Amazon Secrets Manager API
+  description: >-
+    The Amazon Secrets Manager API API from Amazon Secrets Manager — 2 operation(s) for amazon secrets
+    manager api.
   humanURL: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
   baseURL: https://secretsmanager.{region}.amazonaws.com
   tags:
-  - Tag Resource
+  - Amazon Secrets Manager API
   properties:
   - type: OpenAPI
-    url: openapi/amazon-secrets-manager-tag-resource-api-openapi.yml
-  - type: Documentation
-    url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
-  - type: JSONSchema
-    url: json-schema/amazon-secrets-manager-secret-schema.json
-  - type: JSONSchema
-    url: json-schema/amazon-secrets-manager-secret-value-schema.json
-  - type: JSONSchema
-    url: json-schema/amazon-secrets-manager-rotation-rules-schema.json
-- aid: amazon-secrets-manager:amazon-secrets-manager-untag-resource-api
-  name: Amazon Secrets Manager Untag Resource API
-  description: The Untag Resource API from Amazon Secrets Manager — 1 operation(s) for untag resource.
-  humanURL: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
-  baseURL: https://secretsmanager.{region}.amazonaws.com
-  tags:
-  - Untag Resource
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-secrets-manager-untag-resource-api-openapi.yml
+    url: openapi/amazon-secrets-manager-amazon-secrets-manager-api-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
   - type: JSONSchema
@@ -137,7 +121,7 @@ common:
 - type: Plans
   url: plans/amazon-secrets-manager-plans-pricing.yml
 - type: Website
-  url: https://amazon.com
+  url: https://aws.amazon.com/secrets-manager/
 - type: CapabilityMap
   url: capabilities/amazon-secrets-manager-capability-edges.yml
   name: Amazon Secrets Manager Business Capability Map
@@ -351,5 +335,5 @@ integrations:
 - name: AWS Partner Central
 - name: Partner Paths
 - name: co-sell with AWS
-x-parent: aws
+x-parent: amazon-web-services
 x-relationship: product
