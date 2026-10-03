@@ -9,9 +9,7 @@
     "amazon-secrets-manager-rotation-api-openapi.yml",
     "amazon-secrets-manager-secrets-api-openapi.yml"
   ],
-  "archived": [
-    "deleted 2 superseded output(s) from the previous generation"
-  ],
+  "archived": [],
   "errors": [],
   "warnings": [],
   "notes": [
@@ -20,14 +18,12 @@
     "amazon-secrets-manager-openapi.yml: tagged paths POST /#TagResource -> Amazon Secrets Manager API",
     "amazon-secrets-manager-openapi.yml: tagged paths POST /#UntagResource -> Amazon Secrets Manager API",
     "amazon-secrets-manager-openapi.yml: declared missing tag: Amazon Secrets Manager API",
-    "superseded outputs removed: amazon-secrets-manager-tag-resource-api-openapi.yml, amazon-secrets-manager-untag-resource-api-openapi.yml",
-    "apis.yml register: written (+1 apis, 4 total)"
+    "apis.yml register: already-registered"
   ],
   "skipped": [
+    "amazon-secrets-manager-amazon-secrets-manager-api-api-openapi.yml: previously refined output, superseded by openapi/_original/",
     "amazon-secrets-manager-passwords-api-openapi.yml: previously refined output, superseded by openapi/_original/",
     "amazon-secrets-manager-rotation-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-secrets-manager-secrets-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-secrets-manager-tag-resource-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-secrets-manager-untag-resource-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+    "amazon-secrets-manager-secrets-api-openapi.yml: previously refined output, superseded by openapi/_original/"
   ]
 }
