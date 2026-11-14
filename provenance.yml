@@ -5,6 +5,9 @@ artifacts:
   agentic-access/amazon-secrets-manager-agentic-access.yml:
     method: generated
     evidence: declared in the artifact
+  ai-preferences/amazon-secrets-manager-ai-preferences.yml:
+    method: harvested
+    evidence: declared in the artifact
   arazzo/amazon-secrets-manager-create-and-read-secret-workflow.yml:
     method: derived
     evidence: Arazzo whose sourceDescriptions are our split specs (../openapi/)
@@ -33,6 +36,9 @@ artifacts:
     method: searched
     evidence: declared in the artifact
   capabilities/amazon-secrets-manager-capability-edges.yml:
+    method: unknown
+    evidence: no authorship recorded
+  certification/status.yml:
     method: unknown
     evidence: no authorship recorded
   cli/amazon-secrets-manager-cli.yml:
@@ -74,6 +80,9 @@ artifacts:
   collections/amazon-secrets-manager.postman_collection.json:
     method: derived
     evidence: openapi/amazon-secrets-manager
+  compliance/amazon-secrets-manager-compliance.yml:
+    method: harvested
+    evidence: declared in the artifact
   conformance/amazon-secrets-manager-conformance.yml:
     method: derived
     evidence: declared in the artifact
@@ -82,6 +91,9 @@ artifacts:
     evidence: declared in the artifact
   data-model/amazon-secrets-manager-data-model.yml:
     method: derived
+    evidence: declared in the artifact
+  eligibility/amazon-secrets-manager-eligibility.yml:
+    method: harvested
     evidence: declared in the artifact
   errors/amazon-secrets-manager-problem-types.yml:
     method: searched
@@ -110,6 +122,9 @@ artifacts:
   front-door-ai/2026-09-17.yml:
     method: unknown
     evidence: no authorship recorded
+  hosts/amazon-secrets-manager-hosts.yml:
+    method: derived
+    evidence: declared in the artifact
   integrations/_index.yml:
     method: generated
     evidence: carries an API Evangelist house phrase
@@ -119,10 +134,55 @@ artifacts:
   json-ld/amazon-secrets-manager-context.jsonld:
     method: unknown
     evidence: no authorship recorded
+  json-schema/amazon-secrets-manager-batch-get-secret-value-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-secrets-manager-batch-get-secret-value-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-secrets-manager-cancel-rotate-secret-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-secrets-manager-delete-resource-policy-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
   json-schema/amazon-secrets-manager-get-random-password-response-schema.json:
     method: unknown
     evidence: no authorship recorded
+  json-schema/amazon-secrets-manager-get-resource-policy-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-secrets-manager-get-resource-policy-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-secrets-manager-get-secret-value-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-secrets-manager-get-secret-value-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-secrets-manager-list-secret-version-ids-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-secrets-manager-list-secret-version-ids-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
   json-schema/amazon-secrets-manager-list-secrets-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-secrets-manager-put-resource-policy-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-secrets-manager-put-secret-value-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-secrets-manager-put-secret-value-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-secrets-manager-remove-regions-from-replication-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-secrets-manager-remove-regions-from-replication-response-schema.json:
     method: unknown
     evidence: no authorship recorded
   json-schema/amazon-secrets-manager-rotation-rules-schema.json:
@@ -135,6 +195,15 @@ artifacts:
     method: unknown
     evidence: no authorship recorded
   json-schema/amazon-secrets-manager-tag-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-secrets-manager-update-secret-version-stage-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-secrets-manager-validate-resource-policy-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-secrets-manager-validate-resource-policy-response-schema.json:
     method: unknown
     evidence: no authorship recorded
   json-structure/amazon-secrets-manager-get-random-password-response-structure.json:
@@ -158,7 +227,7 @@ artifacts:
   kin/checks-2026-10-23T222754.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
-  kin/checks-2026-11-02T082323.yml:
+  kin/checks-2026-11-06T143934.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-09-23T000603.yml:
@@ -227,34 +296,36 @@ artifacts:
   kin/score-2026-11-02T082323.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-11-06T143934.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
   lifecycle/amazon-secrets-manager-lifecycle.yml:
     method: searched
     evidence: declared in the artifact
+  llms/amazon-secrets-manager-llms-provenance.yml:
+    method: searched
+    evidence: 'derive-llms-provenance.py: harvested'
   llms/amazon-secrets-manager-llms.txt:
     method: searched
     evidence: 'derive-llms-provenance.py: harvested'
   mcp/amazon-secrets-manager-mcp.yml:
     method: derived
     evidence: declared in the artifact
-  openapi/_original/amazon-secrets-manager-openapi.yml:
-    method: harvested
-    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
-      to the provider's source is unverified
   openapi/amazon-secrets-manager-amazon-secrets-manager-api-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+    method: unknown
+    evidence: no authorship recorded
   openapi/amazon-secrets-manager-operations-api-openapi.yml:
     method: unknown
     evidence: no authorship recorded
   openapi/amazon-secrets-manager-passwords-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+    method: unknown
+    evidence: no authorship recorded
   openapi/amazon-secrets-manager-resource-policy-api-openapi.yml:
     method: unknown
     evidence: no authorship recorded
   openapi/amazon-secrets-manager-rotation-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
+    method: unknown
+    evidence: no authorship recorded
   openapi/amazon-secrets-manager-secret-value-api-openapi.yml:
     method: unknown
     evidence: no authorship recorded
@@ -279,6 +350,9 @@ artifacts:
   packages/amazon-secrets-manager-packages.yml:
     method: searched
     evidence: declared in the artifact
+  patterns/amazon-secrets-manager-patterns.yml:
+    method: derived
+    evidence: declared in the artifact
   plans/amazon-secrets-manager-plans-pricing.yml:
     method: searched
     evidence: declared in the artifact
@@ -288,10 +362,16 @@ artifacts:
   postman/amazon-secrets-manager.postman_collection.json:
     method: derived
     evidence: openapi/amazon-secrets-manager
+  privacy/amazon-secrets-manager-privacy-policy.yml:
+    method: harvested
+    evidence: declared in the artifact
   rate-limits/amazon-secrets-manager-rate-limits.yml:
-    method: generated
+    method: searched
     evidence: declared in the artifact
   rules/amazon-secrets-manager-jsonschema-spectral-rules.yml:
+    method: generated
+    evidence: declared in the artifact
+  rules/amazon-secrets-manager-rules.yml:
     method: generated
     evidence: declared in the artifact
   rules/amazon-secrets-manager-spectral-rules.yml:
@@ -310,11 +390,21 @@ artifacts:
     method: generated
     evidence: declared in the artifact
   smithy/secrets-manager-2017-10-17.json:
+    method: harvested
+    evidence: byte-identical to https://raw.githubusercontent.com/aws/api-models-aws/3cd98287b471c106254abd89279cc87308d38bfd/models/secrets-manager/service/2017-10-17/secrets-manager-2017-10-17.json
+      (sha256 2738bd8ded2b, fetched 2026-11-11T21:15:16+00:00)
+  terms/amazon-secrets-manager-terms-of-service.yml:
+    method: harvested
+    evidence: declared in the artifact
+  vendors/amazon-secrets-manager-vendors.yml:
     method: unknown
     evidence: no authorship recorded
   vocabulary/amazon-secrets-manager-vocabulary.yaml:
     method: unknown
     evidence: no authorship recorded
+  vocabulary/amazon-secrets-manager-vocabulary.yml:
+    method: derived
+    evidence: declared in the artifact
   well-known/amazon-secrets-manager-security.txt:
     method: unknown
     evidence: no authorship recorded

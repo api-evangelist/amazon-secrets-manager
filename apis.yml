@@ -10,7 +10,9 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+
 specificationVersion: '0.23'
+
 accessModel:
   pricing: freemium
   onboarding: unknown
@@ -18,24 +20,32 @@ accessModel:
   try_now: false
   public: false
   label: Freemium
-  confidence: medium
+  confidence: high
   source:
   - plans
   - authentication
+  - rate-limits
   - security
-  generated: '2026-11-06'
+  generated: '2026-11-13'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amazon-secrets-manager.png
+
 name: Amazon Secrets Manager
-description: Amazon Secrets Manager helps you manage, retrieve, and rotate database credentials, API keys,
-  and other secrets throughout their lifecycle. It provides centralized secrets management with built-in
-  integration for Amazon RDS, Amazon Redshift, and Amazon DocumentDB, enabling automatic rotation of secrets
-  without requiring application changes.
+
+description: Amazon Secrets Manager helps you manage, retrieve, and rotate database credentials, API keys, and other secrets throughout their
+  lifecycle. It provides centralized secrets management with built-in integration for Amazon RDS, Amazon Redshift, and Amazon DocumentDB, enabling
+  automatic rotation of secrets without requiring application changes.
+
 url: https://aws.amazon.com/secrets-manager/
+
 baseURL: https://secretsmanager.amazonaws.com
+
 kind: company
+
 created: '2024-01-01'
+
 modified: '2026-09-16'
+
 tags:
 - Amazon Web Services
 - Configuration
@@ -50,118 +60,30 @@ tags_raw:
 - Rotation
 - Secrets
 - Security
-apis:
-- aid: amazon-secrets-manager:amazon-secrets-manager-passwords-api
-  name: Amazon Secrets Manager Passwords API
-  description: Operations for generating passwords.
-  humanURL: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
-  baseURL: https://secretsmanager.{region}.amazonaws.com
-  tags:
-  - Passwords
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-secrets-manager-passwords-api-openapi.yml
-  - type: Documentation
-    url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
-  - type: JSONSchema
-    url: json-schema/amazon-secrets-manager-secret-schema.json
-  - type: JSONSchema
-    url: json-schema/amazon-secrets-manager-secret-value-schema.json
-  - type: JSONSchema
-    url: json-schema/amazon-secrets-manager-rotation-rules-schema.json
-- aid: amazon-secrets-manager:amazon-secrets-manager-rotation-api
-  name: Amazon Secrets Manager Rotation API
-  description: Operations for rotating secrets.
-  humanURL: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
-  baseURL: https://secretsmanager.{region}.amazonaws.com
-  tags:
-  - Rotation
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-secrets-manager-rotation-api-openapi.yml
-  - type: Documentation
-    url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
-  - type: JSONSchema
-    url: json-schema/amazon-secrets-manager-secret-schema.json
-  - type: JSONSchema
-    url: json-schema/amazon-secrets-manager-secret-value-schema.json
-  - type: JSONSchema
-    url: json-schema/amazon-secrets-manager-rotation-rules-schema.json
-- aid: amazon-secrets-manager:amazon-secrets-manager-secrets-api
-  name: Amazon Secrets Manager Secrets API
-  description: Operations for managing secrets.
-  humanURL: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
-  baseURL: https://secretsmanager.{region}.amazonaws.com
-  tags:
-  - Secrets
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-secrets-manager-secrets-api-openapi.yml
-  - type: Documentation
-    url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
-  - type: JSONSchema
-    url: json-schema/amazon-secrets-manager-secret-schema.json
-  - type: JSONSchema
-    url: json-schema/amazon-secrets-manager-secret-value-schema.json
-  - type: JSONSchema
-    url: json-schema/amazon-secrets-manager-rotation-rules-schema.json
-- aid: amazon-secrets-manager:amazon-secrets-manager-amazon-secrets-manager-api-api
-  name: Amazon Secrets Manager Amazon Secrets Manager API
-  description: >-
-    The Amazon Secrets Manager API API from Amazon Secrets Manager — 2 operation(s) for amazon secrets
-    manager api.
-  humanURL: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
-  baseURL: https://secretsmanager.{region}.amazonaws.com
-  tags:
-  - Amazon Secrets Manager API
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-secrets-manager-amazon-secrets-manager-api-api-openapi.yml
-  - type: Documentation
-    url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
-  - type: JSONSchema
-    url: json-schema/amazon-secrets-manager-secret-schema.json
-  - type: JSONSchema
-    url: json-schema/amazon-secrets-manager-secret-value-schema.json
-  - type: JSONSchema
-    url: json-schema/amazon-secrets-manager-rotation-rules-schema.json
-- aid: amazon-secrets-manager:amazon-secrets-manager-operations-api
-  name: Amazon Secrets Manager Secrets Manager Operations API
-  description: >-
-    The Secrets Manager Operations API from Amazon Secrets Manager — 5 operation(s) for secrets manager
-    operations.
-  humanURL: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
-  baseURL: https://secretsmanager.{region}.amazonaws.com
-  tags:
-  - Secrets Manager Operations
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-secrets-manager-operations-api-openapi.yml
-- aid: amazon-secrets-manager:amazon-secrets-manager-resource-policy-api
-  name: Amazon Secrets Manager Secrets Manager Resource Policy API
-  description: >-
-    The Secrets Manager Resource Policy API from Amazon Secrets Manager — 4 operation(s) for secrets manager
-    resource policy.
-  humanURL: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
-  baseURL: https://secretsmanager.{region}.amazonaws.com
-  tags:
-  - Secrets Manager Resource Policy
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-secrets-manager-resource-policy-api-openapi.yml
-- aid: amazon-secrets-manager:amazon-secrets-manager-secret-value-api
-  name: Amazon Secrets Manager Secrets Manager Secret Value API
-  description: >-
-    The Secrets Manager Secret Value API from Amazon Secrets Manager — 3 operation(s) for secrets manager
-    secret value.
-  humanURL: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
-  baseURL: https://secretsmanager.{region}.amazonaws.com
-  tags:
-  - Secrets Manager Secret Value
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-secrets-manager-secret-value-api-openapi.yml
+
 common:
+- type: Spectral
+  url: rules/amazon-secrets-manager-spectral-rules.yml
+- type: Spectral
+  url: rules/amazon-secrets-manager-rules.yml
+- type: Spectral
+  url: rules/amazon-secrets-manager-jsonschema-spectral-rules.yml
+- type: Vocabulary
+  url: vocabulary/amazon-secrets-manager-vocabulary.yml
+- type: Idempotency
+  url: conventions/amazon-secrets-manager-conventions.yml
+- type: Deprecation
+  url: https://docs.aws.amazon.com/sdkref/latest/guide/overview.html
+- type: Hosts
+  url: hosts/amazon-secrets-manager-hosts.yml
+- type: Vendors
+  url: vendors/amazon-secrets-manager-vendors.yml
+- type: SDKs
+  url: packages/amazon-secrets-manager-packages.yml
+- type: SignUp
+  url: https://signin.aws.amazon.com/signup?request_type=builderId
+- type: Newsroom
+  url: https://aws.amazon.com/media/?nc2=h_sol_ind_med
 - type: RateLimits
   url: rate-limits/amazon-secrets-manager-rate-limits.yml
 - type: FinOps
@@ -191,10 +113,9 @@ common:
   url: well-known/amazon-secrets-manager-security.txt
 - type: X-MCPServerCandidate
   url: mcp/amazon-secrets-manager-mcp.yml
-  note: 'Renamed from MCPServer 2026-09-03 (roadmap#247): the manifest self-describes as status: candidate
-    — a tool list derived from the published API contracts, not an existing server. The scorer already
-    read the manifest and reported mcp_server correctly; the MCPServer type was crediting the artifact-type
-    surfaces with a server that does not exist.'
+  note: 'Renamed from MCPServer 2026-09-03 (roadmap#247): the manifest self-describes as status: candidate — a tool list derived from the published
+    API contracts, not an existing server. The scorer already read the manifest and reported mcp_server correctly; the MCPServer type was crediting
+    the artifact-type surfaces with a server that does not exist.'
 - type: LLMsTxt
   url: llms/amazon-secrets-manager-llms.txt
 - type: Overlay
@@ -284,19 +205,15 @@ common:
 - type: Features
   data:
   - name: Automatic Secret Rotation
-    description: Automatically rotate secrets on a schedule using AWS Lambda rotation functions without
-      changing application code.
+    description: Automatically rotate secrets on a schedule using AWS Lambda rotation functions without changing application code.
   - name: Centralized Secret Storage
-    description: Store and manage all secrets in a single, centralized location with fine-grained access
-      controls.
+    description: Store and manage all secrets in a single, centralized location with fine-grained access controls.
   - name: Native Database Integration
-    description: Built-in integration with Amazon RDS, Aurora, Redshift, and DocumentDB for automatic
-      credential rotation.
+    description: Built-in integration with Amazon RDS, Aurora, Redshift, and DocumentDB for automatic credential rotation.
   - name: Secret Versioning
     description: Maintain multiple versions of a secret simultaneously to support zero-downtime rotation.
   - name: Audit and Compliance
-    description: Log all secret access and management actions via AWS CloudTrail for compliance and audit
-      purposes.
+    description: Log all secret access and management actions via AWS CloudTrail for compliance and audit purposes.
   - name: Cross-Account Access
     description: Share secrets across AWS accounts using resource-based policies.
   - name: Encryption at Rest
@@ -310,11 +227,9 @@ common:
   - name: API Key Storage
     description: Securely store and retrieve API keys, OAuth tokens, and other third-party service credentials.
   - name: Application Configuration
-    description: Centralize sensitive application configuration such as connection strings and encryption
-      keys.
+    description: Centralize sensitive application configuration such as connection strings and encryption keys.
   - name: Cross-Service Credentials
-    description: Share service-to-service credentials securely across microservices without embedding
-      in code.
+    description: Share service-to-service credentials securely across microservices without embedding in code.
   - name: Compliance Secret Rotation
     description: Meet compliance requirements like PCI DSS and SOC 2 by enforcing regular credential rotation.
   - name: Secrets Lifecycle Governance
@@ -373,7 +288,159 @@ common:
   url: examples/amazon-secrets-manager-tag-example.json
 - type: Integrations
   url: https://aws.amazon.com/partners/
+- type: UsageTerms
+  url: terms/amazon-secrets-manager-terms-of-service.yml
+- type: DataProcessing
+  url: privacy/amazon-secrets-manager-privacy-policy.yml
+- type: Attestations
+  url: compliance/amazon-secrets-manager-compliance.yml
+- type: Eligibility
+  url: eligibility/amazon-secrets-manager-eligibility.yml
+- type: AIPreferences
+  url: ai-preferences/amazon-secrets-manager-ai-preferences.yml
+
+apis:
+- aid: amazon-secrets-manager:amazon-secrets-manager-passwords-api
+  name: Amazon Secrets Manager Passwords API
+  description: Operations for generating passwords.
+  humanURL: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
+  baseURL: https://secretsmanager.{region}.amazonaws.com
+  tags:
+  - Passwords
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-secrets-manager-passwords-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-secret-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-secret-value-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-rotation-rules-schema.json
+- aid: amazon-secrets-manager:amazon-secrets-manager-rotation-api
+  name: Amazon Secrets Manager Rotation API
+  description: Operations for rotating secrets.
+  humanURL: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
+  baseURL: https://secretsmanager.{region}.amazonaws.com
+  tags:
+  - Rotation
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-secrets-manager-rotation-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-secret-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-secret-value-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-rotation-rules-schema.json
+- aid: amazon-secrets-manager:amazon-secrets-manager-secrets-api
+  name: Amazon Secrets Manager Secrets API
+  description: Operations for managing secrets.
+  humanURL: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
+  baseURL: https://secretsmanager.{region}.amazonaws.com
+  tags:
+  - Secrets
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-secrets-manager-secrets-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-secret-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-secret-value-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-rotation-rules-schema.json
+- aid: amazon-secrets-manager:amazon-secrets-manager-amazon-secrets-manager-api-api
+  name: Amazon Secrets Manager Amazon Secrets Manager API
+  description: The Amazon Secrets Manager API API from Amazon Secrets Manager — 2 operation(s) for amazon secrets manager api.
+  humanURL: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
+  baseURL: https://secretsmanager.{region}.amazonaws.com
+  tags:
+  - Amazon Secrets Manager API
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-secrets-manager-amazon-secrets-manager-api-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-secret-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-secret-value-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-rotation-rules-schema.json
+- aid: amazon-secrets-manager:amazon-secrets-manager-operations-api
+  name: Amazon Secrets Manager Secrets Manager Operations API
+  description: The Secrets Manager Operations API from Amazon Secrets Manager — 5 operation(s) for secrets manager operations.
+  humanURL: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
+  baseURL: https://secretsmanager.{region}.amazonaws.com
+  tags:
+  - Secrets Manager Operations
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-secrets-manager-operations-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-update-secret-version-stage-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-list-secret-version-ids-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-list-secret-version-ids-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-cancel-rotate-secret-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-remove-regions-from-replication-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-remove-regions-from-replication-request-schema.json
+- aid: amazon-secrets-manager:amazon-secrets-manager-resource-policy-api
+  name: Amazon Secrets Manager Secrets Manager Resource Policy API
+  description: The Secrets Manager Resource Policy API from Amazon Secrets Manager — 4 operation(s) for secrets manager resource policy.
+  humanURL: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
+  baseURL: https://secretsmanager.{region}.amazonaws.com
+  tags:
+  - Secrets Manager Resource Policy
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-secrets-manager-resource-policy-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-put-resource-policy-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-get-resource-policy-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-validate-resource-policy-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-validate-resource-policy-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-get-resource-policy-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-delete-resource-policy-request-schema.json
+- aid: amazon-secrets-manager:amazon-secrets-manager-secret-value-api
+  name: Amazon Secrets Manager Secrets Manager Secret Value API
+  description: The Secrets Manager Secret Value API from Amazon Secrets Manager — 3 operation(s) for secrets manager secret value.
+  humanURL: https://docs.aws.amazon.com/secretsmanager/latest/apireference/
+  baseURL: https://secretsmanager.{region}.amazonaws.com
+  tags:
+  - Secrets Manager Secret Value
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-secrets-manager-secret-value-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-put-secret-value-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-get-secret-value-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-get-secret-value-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-batch-get-secret-value-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-batch-get-secret-value-response-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-secrets-manager-put-secret-value-response-schema.json
+
 maintainer: Kin Lane
+
 integrations:
 - name: Partner Programs
 - name: Resources
@@ -383,5 +450,12 @@ integrations:
 - name: AWS Partner Central
 - name: Partner Paths
 - name: co-sell with AWS
+
 x-parent: amazon-web-services
+
 x-relationship: product
+x-enrichment:
+  date: '2026-11-11'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v6
